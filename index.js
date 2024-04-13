@@ -122,7 +122,7 @@ async function generateBgmImage(userId) {
     for (const character of characters) {
         const imgUrl = character.image;
         const imgData = await bgm.downloadImage(imgUrl);
-        characterHtml = characterHtml + "<img src=\"data:image/png;base64," + imgData + "\" width=\"36\" height=\"54\" alt=\"\"/>"
+        characterHtml = characterHtml + "<img src=\"data:image/png;base64," + imgData + "\" width=\"36\" height=\"50\" alt=\"\"/>"
     }
 
     // 玩过，在玩，点评的游戏
